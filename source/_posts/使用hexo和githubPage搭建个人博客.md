@@ -1,5 +1,5 @@
 ---
-title: 在ubuntu环境下使用hexo和github page 搭建个人博客
+title: 使用hexo和github page 搭建个人博客
 ---
 
 刚刚把个人博客重新搭好，感觉自己找的几个教程都有点没讲清楚，于是打算自己总结下。
