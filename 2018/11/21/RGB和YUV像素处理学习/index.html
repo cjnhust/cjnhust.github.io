@@ -218,7 +218,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Chubby&#39;s Blog">
-    <meta name="msapplication-starturl" content="cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/">
+    <meta name="msapplication-starturl" content="cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Chubby&#39;s Blog">
@@ -233,7 +233,7 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/">
+    <meta property="og:url" content="cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="RGB和YUV格式及处理学习 | Chubby&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
@@ -241,8 +241,8 @@
     <meta property="og:article:tag" content="音视频相关"> 
 
     
-        <meta property="article:published_time" content="Thu Nov 15 2018 11:12:00 GMT+0800">
-        <meta property="article:modified_time" content="Wed Nov 21 2018 15:01:03 GMT+0800">
+        <meta property="article:published_time" content="Wed Nov 21 2018 15:05:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Nov 21 2018 15:05:00 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/index.html" />
+        <link rel="canonical" href="cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -262,10 +262,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/index.html",
+    "mainEntityOfPage": "cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/index.html",
     "headline": "RGB和YUV格式及处理学习",
-    "datePublished": "Thu Nov 15 2018 11:12:00 GMT+0800",
-    "dateModified": "Wed Nov 21 2018 15:01:03 GMT+0800",
+    "datePublished": "Wed Nov 21 2018 15:05:00 GMT+0800",
+    "dateModified": "Wed Nov 21 2018 15:05:00 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Chubby",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#RGB的几种格式"><span class="post-toc-number">1.</span> <span class="post-toc-text">RGB的几种格式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#YUV的几种格式"><span class="post-toc-number">2.</span> <span class="post-toc-text">YUV的几种格式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-YUYV-YUV422"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">(1)YUYV(YUV422)</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-UYVY-YUV422"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">(2)UYVY(YUV422)</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#RGB的几种格式"><span class="post-toc-number">1.</span> <span class="post-toc-text">RGB的几种格式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#YUV的几种格式"><span class="post-toc-number">2.</span> <span class="post-toc-text">YUV的几种格式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-YUYV-YUV422"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">(1)YUYV(YUV422)</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-UYVY-YUV422"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">(2)UYVY(YUV422)</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-YUV422P-属于YUV422"><span class="post-toc-number">2.0.3.</span> <span class="post-toc-text">(3)YUV422P(属于YUV422)</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-YV12-YU12-属于YUV420"><span class="post-toc-number">2.0.4.</span> <span class="post-toc-text">(4)YV12,YU12(属于YUV420)</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5-NV12、NV21-属于YUV420"><span class="post-toc-number">2.0.5.</span> <span class="post-toc-text">(5)NV12、NV21(属于YUV420)</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -400,7 +400,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Chubby</strong>
-        <span>11月 15, 2018</span>
+        <span>11月 21, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -441,7 +441,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=RGB和YUV格式及处理学习&url=cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/index.html&pic=cjnhust.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=RGB和YUV格式及处理学习&url=cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/index.html&pic=cjnhust.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -450,7 +450,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=RGB和YUV格式及处理学习&url=cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/index.html&via=Chubby" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=RGB和YUV格式及处理学习&url=cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/index.html&via=Chubby" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -459,7 +459,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -468,7 +468,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=cjnhust.github.io/2018/11/15/RGB和YUV像素处理学习/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=cjnhust.github.io/2018/11/21/RGB和YUV像素处理学习/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -511,14 +511,11 @@
 <p>YUYV为YUV422采样的存储格式中的一种，相邻的两个Y共用其相邻的两个Cb、Cr，分析，对于像素点Y’00、Y’01 而言，其Cb、Cr的值均为 Cb00、Cr00，其他的像素点的YUV取值依次类推。</p>
 <h5 id="2-UYVY-YUV422"><a href="#2-UYVY-YUV422" class="headerlink" title="(2)UYVY(YUV422)"></a>(2)UYVY(YUV422)</h5><p><img src="/images/UYVY.png" alt="img"></p>
 <p>UYVY格式也是YUV422采样的存储格式中的一种，只不过与YUYV不同的是UV的排列顺序不一样而已，还原其每个像素点的YUV值的方法与上面一样。</p>
-<p>#####(3)YUV422P(<strong>属于YUV422</strong>)</p>
-<p>YUV422P也属于YUV422的一种，它是一种Plane模式，即打包模式，并不是将YUV数据交错存储，而是先存放所有的Y分量，然后存储所有的U（Cb）分量，最后存储所有的V（Cr）分量，如上图所示。其每一个像素点的YUV值提取方法也是遵循YUV422格式的最基本提取方法，即两个Y共用一个UV。比如，对于像素点Y’00、Y’01 而言，其Cb、Cr的值均为 Cb00、Cr00。</p>
-<p>#####(4)YV12,YU12(<strong>属于YUV420</strong>)</p>
-<p>YU12和YV12属于YUV420格式，也是一种Plane模式，将Y、U、V分量分别打包，依次存储。其每一个像素点的YUV数据提取遵循YUV420格式的提取方式，即4个Y分量共用一组UV。注意，上图中，Y’00、Y’01、Y’10、Y’11共用Cr00、Cb00，其他依次类推。</p>
+<h5 id="3-YUV422P-属于YUV422"><a href="#3-YUV422P-属于YUV422" class="headerlink" title="(3)YUV422P(属于YUV422)"></a>(3)YUV422P(<strong>属于YUV422</strong>)</h5><p>YUV422P也属于YUV422的一种，它是一种Plane模式，即打包模式，并不是将YUV数据交错存储，而是先存放所有的Y分量，然后存储所有的U（Cb）分量，最后存储所有的V（Cr）分量，如上图所示。其每一个像素点的YUV值提取方法也是遵循YUV422格式的最基本提取方法，即两个Y共用一个UV。比如，对于像素点Y’00、Y’01 而言，其Cb、Cr的值均为 Cb00、Cr00。</p>
+<h5 id="4-YV12-YU12-属于YUV420"><a href="#4-YV12-YU12-属于YUV420" class="headerlink" title="(4)YV12,YU12(属于YUV420)"></a>(4)YV12,YU12(<strong>属于YUV420</strong>)</h5><p>YU12和YV12属于YUV420格式，也是一种Plane模式，将Y、U、V分量分别打包，依次存储。其每一个像素点的YUV数据提取遵循YUV420格式的提取方式，即4个Y分量共用一组UV。注意，上图中，Y’00、Y’01、Y’10、Y’11共用Cr00、Cb00，其他依次类推。</p>
 <p>分离这种格式YUV分量的c代码如下</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">yuv420_split</span><span class="params">(<span class="keyword">char</span> *url, <span class="keyword">int</span> w, <span class="keyword">int</span> h, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">    FILE *fp_source = fopen(url, <span class="string">"rb+"</span>);</span><br><span class="line">    FILE *fp_y = fopen(<span class="string">"/out/yuv420_y.yuv"</span>, <span class="string">"wb+"</span>);</span><br><span class="line">    FILE *fp_u = fopen(<span class="string">"/out/yuv420_u.yuv"</span>, <span class="string">"wb+"</span>);</span><br><span class="line">    FILE *fp_v = fopen(<span class="string">"/out/yuv420_v.yuv"</span>, <span class="string">"wb+"</span>);</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> *pic = (<span class="keyword">unsigned</span> <span class="keyword">char</span> *) <span class="built_in">malloc</span>(w * h * <span class="number">3</span> / <span class="number">2</span> * c_l);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; ++i) &#123;</span><br><span class="line">        fread(pic, c_l, w * h * <span class="number">3</span> / <span class="number">2</span> * c_l, fp_source);</span><br><span class="line">        fwrite(pic, c_l, w * h * c_l, fp_y);</span><br><span class="line">        fwrite(pic + w * h, c_l, w * h / <span class="number">4</span> * c_l, fp_u);</span><br><span class="line">        fwrite(pic + w * h * <span class="number">5</span> / <span class="number">4</span>, c_l, w * h / <span class="number">4</span> * c_l, fp_v);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">free</span>(pic);</span><br><span class="line">    fclose(fp_source);</span><br><span class="line">    fclose(fp_y);</span><br><span class="line">    fclose(fp_u);</span><br><span class="line">    fclose(fp_v);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>#####(5)NV12、NV21(<strong>属于YUV420</strong>)</p>
-<p>NV12和NV21属于YUV420格式，是一种two-plane模式，即Y和UV分为两个Plane，但是UV（CbCr）为交错存储，而不是分为三个plane。其提取方式与上一种类似，即Y’00、Y’01、Y’10、Y’11共用Cr00、Cb00，NV12和NV21的区别在于前者UV交错存储时U在前面，后者V在前面，NV12结构如下图所示，NV21类似只是UV顺序相反</p>
+<h5 id="5-NV12、NV21-属于YUV420"><a href="#5-NV12、NV21-属于YUV420" class="headerlink" title="(5)NV12、NV21(属于YUV420)"></a>(5)NV12、NV21(<strong>属于YUV420</strong>)</h5><p>NV12和NV21属于YUV420格式，是一种two-plane模式，即Y和UV分为两个Plane，但是UV（CbCr）为交错存储，而不是分为三个plane。其提取方式与上一种类似，即Y’00、Y’01、Y’10、Y’11共用Cr00、Cb00，NV12和NV21的区别在于前者UV交错存储时U在前面，后者V在前面，NV12结构如下图所示，NV21类似只是UV顺序相反</p>
 <p><img src="/images/NV12.gif" alt="Figure 13. NV12 memory layout "></p>
 <p>YUV RGB 相互转化</p>
 
@@ -541,21 +538,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/11/15/ndk/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/11/15/使用hexo和githubPage搭建个人博客/" id="post_nav-older" class="next-content">
+        <a href="/2018/11/19/前条件:不变式:后条件/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
