@@ -79,6 +79,16 @@ NV12和NV21属于YUV420格式，是一种two-plane模式，即Y和UV分为两个
 
 YUV RGB 相互转化
 
+
+
+**PS:查看ffmpeg所有支持格式的命令**
+
+```shell
+./ffmpeg -pix_fmts
+```
+
+
+
 ### 参考资料
 
 https://blog.csdn.net/leixiaohua1020/article/details/50534150
