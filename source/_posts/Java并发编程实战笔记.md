@@ -1,8 +1,8 @@
-```yaml
+---
 title: Java 并发编程实战笔记
 categories: 
 - Java
-```
+---
 
 #### 一些概念
 
